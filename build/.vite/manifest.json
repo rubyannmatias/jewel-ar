@@ -1,0 +1,23 @@
+{
+  "index.html": {
+    "file": "assets/index.D28uY_oI.js",
+    "name": "index",
+    "src": "index.html",
+    "isEntry": true,
+    "css": [
+      "assets/index.F7TTZFbV.css"
+    ],
+    "assets": [
+      "assets/thumbnail-sapphire-earring.m933hk__.png",
+      "assets/3D-sapphire-earring.BFZ_v-tG.glb"
+    ]
+  },
+  "src/static/assets/3D-sapphire-earring.glb": {
+    "file": "assets/3D-sapphire-earring.BFZ_v-tG.glb",
+    "src": "src/static/assets/3D-sapphire-earring.glb"
+  },
+  "src/static/assets/thumbnail-sapphire-earring.png": {
+    "file": "assets/thumbnail-sapphire-earring.m933hk__.png",
+    "src": "src/static/assets/thumbnail-sapphire-earring.png"
+  }
+}
