@@ -4,7 +4,8 @@ import 'mind-ar/dist/mindar-face-aframe.prod.js';
 import sapphireEarringThumb from './static/assets/thumbnail-sapphire-earring.png';
 import sapphireEarring from './static/assets/3D-sapphire-earring.glb';
 // import solitaireDiamondRing from './static/assets/3D-solitaire-dia-ring.3dm';
-// import rubyDiamondNecklace from './static/assets/3D-ruby-dia-necklace.glb';
+import rubyDiamondThumb from './static/assets/thumbnail-ruby-diamond-necklace.png';
+import rubyDiamondNecklace from './static/assets/3D-ruby-dia-necklace.glb';
 
 document.querySelector<HTMLBodyElement>('body')!.innerHTML = `
   <div class="example-container">
@@ -17,6 +18,8 @@ document.querySelector<HTMLBodyElement>('body')!.innerHTML = `
         src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.5/examples/face-tracking/assets/earring/thumbnail.png" />
       <img id="sapphireEarring"
         src="${sapphireEarringThumb}" />
+      <img id="rubyDiamondNecklace"
+        src="${rubyDiamondThumb}" />
     </div>
     <a-scene mindar-face embedded color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights"
       vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
@@ -31,6 +34,8 @@ document.querySelector<HTMLBodyElement>('body')!.innerHTML = `
           src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.5/examples/face-tracking/assets/earring/scene.gltf"></a-asset-item>
         <a-asset-item id="sapphireEarringModel"
           src="${sapphireEarring}"></a-asset-item>
+        <a-asset-item id="rubyDiamondNecklaceModel"
+          src="${rubyDiamondNecklace}"></a-asset-item>
       </a-assets>
       <a-camera active="false" position="0 0 0"></a-camera>
       <!-- head occluder -->
@@ -61,6 +66,10 @@ document.querySelector<HTMLBodyElement>('body')!.innerHTML = `
       <a-entity mindar-face-target="anchorIndex: 356">
         <a-gltf-model rotation="0.1 -0 0" position="0 -0.3 -0.3" scale="0.1 0.1 0.1" src="#sapphireEarringModel"
           class="sapphireEarring-entity" visible="false"></a-gltf-model>
+      </a-entity>
+      <a-entity mindar-face-target="anchorIndex: 152">
+        <a-gltf-model rotation="0.1 -0 0" position="0 -0.4 -0.4" scale="0.95 0.95 0.95" src="#rubyDiamondNecklaceModel"
+          class="rubyDiamondNecklace-entity" visible="false"></a-gltf-model>
       </a-entity>
     </a-scene>
   </div>

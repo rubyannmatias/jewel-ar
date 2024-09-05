@@ -1,6 +1,6 @@
 const selectionListener = () => {
-  const list = ['glasses2', 'hat2', 'earring', 'sapphireEarring'];
-  const visibles = [false, false, false, true];
+  const list = ['glasses2', 'hat2', 'earring', 'sapphireEarring', 'rubyDiamondNecklace'];
+  const visibles = [false, false, false, true, false];
   // eslint-why NodeListOf<Element> is needed
   // eslint-disable-next-line no-undef
   const setVisible = (button: Element, entities: NodeListOf<Element>, visible: string) => {
