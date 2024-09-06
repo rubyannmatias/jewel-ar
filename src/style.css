@@ -1,8 +1,10 @@
 body {
   margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 }
 
-.example-container {
+.demo-container {
   overflow: hidden;
   position: absolute;
   width: 100%;
@@ -10,8 +12,11 @@ body {
 }
 
 .options-panel {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
   position: fixed;
-  left: 0;
+  right: 0;
   top: 0;
   z-index: 2;
 }
@@ -22,8 +27,40 @@ body {
   height: 50px;
   object-fit: cover;
   cursor: pointer;
+  margin: 5px;
 }
 
 .options-panel img.selected {
   border-color: green;
+}
+
+#landing-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#message {
+  display: table-cell;
+  text-align: center;
+  color: white;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  margin: 20px;
+  z-index: 999;
+  position: relative;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+#app {
+  display: inline-block;
 }

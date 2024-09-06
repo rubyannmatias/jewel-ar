@@ -1,6 +1,8 @@
-const selectionListener = () => {
-  const list = ['glasses2', 'hat2', 'earring', 'sapphireEarring', 'rubyDiamondNecklace'];
-  const visibles = [false, false, false, true, false];
+import { IModel } from '../types/types';
+
+export const selectionListener = (models: IModel[]) => {
+  const list = [...new Set(models.map((model) => { return model.name; }))];
+  const visibles = list.map((listItem) => { return models.find((model) => { return model.name === listItem })?.selected ?? false; });
   // eslint-why NodeListOf<Element> is needed
   // eslint-disable-next-line no-undef
   const setVisible = (button: Element, entities: NodeListOf<Element>, visible: string) => {
@@ -26,7 +28,3 @@ const selectionListener = () => {
     }
   });
 };
-
-document.addEventListener('DOMContentLoaded', function () {
-  selectionListener();
-});
