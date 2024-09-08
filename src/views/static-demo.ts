@@ -16,7 +16,7 @@ const uniqueModels: Array<IModelContent | null> = models.map((model) => {
   return null;
 }).filter((model) => { return model !== null });
 
-export const multipleContent = `
+export const staticContent = `
   <div class="demo-container">
     <div class="options-panel">
       ${

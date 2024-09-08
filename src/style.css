@@ -64,3 +64,31 @@ body {
 #app {
   display: inline-block;
 }
+
+#customInput {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  width: 100%;
+
+  div {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+  
+    input,
+    select {
+      display: flex;
+      flex: 1 0 auto;
+    }
+  }
+
+  div:last-of-type {
+    justify-content: flex-end;
+  }
+
+  #validationWarning {
+    color: rgb(106, 3, 3);
+    font-weight: 700;
+  }
+}
