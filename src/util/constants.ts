@@ -67,7 +67,7 @@ export const sampleEarring = [
 export enum DEMO_MODEL_TYPES {
   HAT = 'hat',
   GLASSES = 'glasses',
-  NOSE_RING = 'nose ring',
+  NOSE_RING = 'nosering',
   EARRINGS = 'earrings',
   NECKLACE = 'necklace',
 }
