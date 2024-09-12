@@ -1,6 +1,6 @@
 # jewel-ar
 
-- This repository contains a demo of a regular as well as an personalized augmented reality experience using mind-ar and aframe.
+- This repository contains a demo of a regular as well as a personalized augmented reality experience using mind-ar and aframe.
 - It does face landmark detection based on this [TFJS map](https://github.com/tensorflow/tfjs-models/blob/master/face-landmarks-detection/mesh_map.jpg).
 - We have provided a static demo where the assets (3D models and thumbnail) are sourced within the repo.
 - We have also provided a dynamic demo where users can put any valid URL of their own if they want to experience it using their own 3D models and thumbnail images.
