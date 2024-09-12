@@ -2,6 +2,7 @@ import { IModel } from '../types/types';
 import { dynamicContent } from '../views/dynamic-demo';
 import { FACE_LANDMARK_MAP_DEFAULTS, routes } from './constants';
 import { models } from './demo-map';
+import { preferencesListener } from './preferences';
 import { selectionListener } from './selection';
 import { renderWelcome } from './welcome';
 
@@ -61,11 +62,13 @@ export const replaceAppContent = (route: string, modelData?: Array<{ name: strin
     if (app) {
       app.innerHTML = dynamicContent(dynamicModels);
       selectionListener(dynamicModels);
+      preferencesListener();
     }
   } else {
     if (app) {
       app.innerHTML = routes[route].content
       selectionListener(models);
+      preferencesListener();
     }
   }
 };
