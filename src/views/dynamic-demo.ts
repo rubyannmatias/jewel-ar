@@ -23,6 +23,23 @@ export const dynamicContent = (models: IModel[]) => {
           uniqueModels.map((model) => { if (model) return model.thumbnail; }).join('')
         }
       </div>
+      <div class="ar-preferences-panel">
+        <div class="ar-scale">
+          <label>Scale</label>
+          <button id="increaseScale">+</button>
+          <button id="decreaseScale">-</button>
+        </div>
+        <div class="ar-y-rotation">
+          <label>Y-axis Rotation</label>
+          <button id="rotateLeft">Left</button>
+          <button id="rotateRight">Right</button>
+        </div>
+        <div class="ar-position">
+          <label>Position</label>
+          <button id="moveUp">Up</button>
+          <button id="moveDown">Down</button>
+        </div>
+      </div>
       <a-scene mindar-face embedded color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights"
         vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
         <a-assets>
@@ -43,6 +60,7 @@ export const dynamicContent = (models: IModel[]) => {
             return `
               <a-entity mindar-face-target="anchorIndex: ${model.anchorIndex}">
                 <a-gltf-model
+                  data-id="dynamicModelEntity"
                   rotation="${model.rotation}"
                   position="${model.position}"
                   scale="${model.scale}"
