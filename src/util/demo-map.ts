@@ -4,6 +4,8 @@ import rubyDiamondThumb from '../static/assets/thumbnail-ruby-diamond-necklace.p
 import rubyDiamondNecklace from '../static/assets/3D-ruby-dia-necklace.glb';
 import demoGoldNoseRingThumb from '../static/assets/thumbnail-nose-ring.png';
 import demoGoldNoseRing from '../static/assets/3D-nose-ring.glb';
+import demoDiamondCrownThumb from '../static/assets/thumbnail-royal-sapphire-crown.png';
+import demoDiamondCrown from '../static/assets/3D-royal-sapphire-crown.glb';
 import { IModel } from '../types/types';
 
 export const models: IModel[] = [
@@ -58,5 +60,18 @@ export const models: IModel[] = [
     modelId: 'demoGoldNoseRingModel',
     modelSrc: demoGoldNoseRing,
     selected: false,
+  },
+  {
+    name: 'demoDiamondCrown',
+    type: 'crown',
+    thumbnailSrc: demoDiamondCrownThumb,
+    anchorIndex: 9,
+    rotation: '0.1 -0 0',
+    position: '0 0.6 -0',
+    scale: '1 1 1',
+    entityName: 'demoDiamondCrown-entity',
+    modelId: 'demoDiamondCrownModel',
+    modelSrc: demoDiamondCrown,
+    selected: true,
   }
 ];
