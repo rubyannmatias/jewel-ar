@@ -6,6 +6,10 @@ import demoGoldNoseRingThumb from '../static/assets/thumbnail-nose-ring.png';
 import demoGoldNoseRing from '../static/assets/3D-nose-ring.glb';
 import demoDiamondCrownThumb from '../static/assets/thumbnail-royal-sapphire-crown.png';
 import demoDiamondCrown from '../static/assets/3D-royal-sapphire-crown.glb';
+import sunglasessThumb from '../static/assets/sunglasses.jpg';
+import sunglasess from '../static/assets/3D_sunglasses.glb';
+import helmetThumb from '../static/assets/helmet.jpg';
+import helmet from '../static/assets/3D_helmet.glb';
 import { IModel } from '../types/types';
 
 export const models: IModel[] = [
@@ -72,6 +76,32 @@ export const models: IModel[] = [
     entityName: 'demoDiamondCrown-entity',
     modelId: 'demoDiamondCrownModel',
     modelSrc: demoDiamondCrown,
-    selected: true,
+    selected: false,
+  },
+  {
+    name: 'sunglasses',
+    type: 'sunglasses',
+    thumbnailSrc: sunglasessThumb,
+    anchorIndex: 152,
+    rotation: '0.0 -0 0',
+    position: '0 0.55 -0.55',
+    scale: '7 7 7',
+    entityName: 'sunglasses-entity',
+    modelId: 'sunglassesModel',
+    modelSrc: sunglasess,
+    selected: false,
+  },
+  {
+    name: 'helmet',
+    type: 'helmet',
+    thumbnailSrc: helmetThumb,
+    anchorIndex: 152,
+    rotation: '0.0 -0 0',
+    position: '0 -0.55 -1.25',
+    scale: '8 8 12',
+    entityName: 'helmet-entity',
+    modelId: 'helmetModel',
+    modelSrc: helmet,
+    selected: false,
   }
 ];

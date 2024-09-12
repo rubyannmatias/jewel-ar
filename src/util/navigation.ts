@@ -47,6 +47,17 @@ export const replaceAppContent = (route: string, modelData?: Array<{ name: strin
     defaultModel.selected = true;
     dynamicModels.push(defaultModel);
 
+    // Special case for earrings
+    if (modelData[productPlacement].value === 'earrings') {
+      const otherEarModel = { ...defaultModel };
+      otherEarModel.modelSrc = modelData[model].value || '';
+      otherEarModel.thumbnailSrc = modelData[thumbnail].value || '';
+      otherEarModel.selected = true;
+      otherEarModel.anchorIndex = 356;
+      otherEarModel.rotation = '0.1 -0 0';
+      dynamicModels.push(otherEarModel);
+    }
+
     if (app) {
       app.innerHTML = dynamicContent(dynamicModels);
       selectionListener(dynamicModels);
