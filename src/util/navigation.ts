@@ -68,7 +68,6 @@ export const replaceAppContent = (route: string, modelData?: Array<{ name: strin
     if (app) {
       app.innerHTML = routes[route].content
       selectionListener(models);
-      preferencesListener();
     }
   }
 };
