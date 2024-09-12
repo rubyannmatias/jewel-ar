@@ -2,10 +2,8 @@ import sapphireEarringThumb from '../static/assets/thumbnail-sapphire-earring.pn
 import sapphireEarring from '../static/assets/3D-sapphire-earring.glb';
 import rubyDiamondThumb from '../static/assets/thumbnail-ruby-diamond-necklace.png';
 import rubyDiamondNecklace from '../static/assets/3D-ruby-dia-necklace.glb';
-import demoGoldNoseRingThumb from '../static/assets/thumbnail-gold-nosering.png';
-import demoGoldNoseRing from '../static/assets/3D-gold-nosering.glb';
-// import demoGoldNoseRingThumb from '../static/assets/nose.png';
-// import demoGoldNoseRing from '../static/assets/nose.glb';
+import demoGoldNoseRingThumb from '../static/assets/thumbnail-nose-ring.png';
+import demoGoldNoseRing from '../static/assets/3D-nose-ring.glb';
 import { IModel } from '../types/types';
 
 export const models: IModel[] = [
@@ -52,13 +50,13 @@ export const models: IModel[] = [
     name: 'demoGoldNoseRing',
     type: 'nosering',
     thumbnailSrc: demoGoldNoseRingThumb,
-    anchorIndex: 363,
-    rotation: '0.2 130 20',
-    position: '0 0 0',
-    scale: '0.005 0.005 0.005',
+    anchorIndex: 326,
+    rotation: '5 5 -1',
+    position: '-0.1 -0.07 -0.3',
+    scale: '0.0011 0.0011 0.0011',
     entityName: 'demoGoldNoseRing-entity',
     modelId: 'demoGoldNoseRingModel',
     modelSrc: demoGoldNoseRing,
-    selected: true,
+    selected: false,
   }
 ];
